@@ -7,7 +7,8 @@ on:
   workflow_dispatch:
 
 jobs:
-  test:
+  # Continuous Integration (builds & tests)
+  ci:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
