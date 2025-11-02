@@ -5,7 +5,7 @@ import test from 'ava';
 function requestLocalHello() {
   return new Promise((resolve, reject) => {
     const req = http.request(
-      { hostname: 'localhost', port: 6000, path: '/api/hello', method: 'GET' },
+      { hostname: 'localhost', port: 3001, path: '/api/hello', method: 'GET' },
       res => {
         let data = '';
         res.on('data', chunk => data += chunk);
@@ -21,7 +21,7 @@ let serverProcess;
 
 test.before(async () => {
   // Start the server before tests
-  serverProcess = spawn('node', ['server.js'], { env: { ...process.env, PORT: '6000' } });
+  serverProcess = spawn('node', ['server.js'], { env: { ...process.env, PORT: '3001' } });
   // Wait for server to boot
   await new Promise(r => setTimeout(r, 1000));
 });

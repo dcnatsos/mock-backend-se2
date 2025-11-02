@@ -6,7 +6,7 @@ Simple Express API for Render demo.
 ```bash
 npm install
 npm start
-# visit http://localhost:6000/api/hello
+# visit http://localhost:3001/api/hello
 ```
 
 ## Test
