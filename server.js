@@ -13,6 +13,10 @@ app.get('/api/hello', (req, res) => {
   });
 });
 
+app.get('/api', (req, res) => {
+  res.send('Backend is running');
+});
+
 const port = process.env.PORT || 3001;
 app.listen(port, () => {
   console.log(`Backend listening on ${port}`);
