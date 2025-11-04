@@ -39,3 +39,4 @@ test('backend /api/hello endpoint returns 200 with correct message', async t => 
   t.true(parsed.message.includes('Hello'), 'Expected message to include "Hello"');
   t.truthy(parsed.time, 'Expected time field');
 });
+
