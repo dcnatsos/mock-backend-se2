@@ -27,6 +27,7 @@ jobs:
 
   cd:
     runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
     needs: ci
     steps:
       - name: Deploy to Render
